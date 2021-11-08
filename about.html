@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About & Feedback</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="nav_links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="about.html" class="active">About & Feedback</a></li>
+            </ul>
+        </nav>
+        <a class='cta' href="resume.pdf" target="_blank"><button class="btn">View Resume</button> </a>
+    </header>
+    <main>
+        <div class="main__content">
+            <h2>About</h2>
+            <p>I am a student. I live and study at Chhattisgarh. This website is a part of assignment of one of my
+                university
+                courses. Below is a commenting system. Leave a comment what you feel about this website.<br>
+
+                PS: This website currently does not support server-side scripting thus comments are not stored.
+                Minimum
+                valid length for all field is 4(excluding whitespaces before and after).
+            </p>
+        </div>
+        <div class="wrapper">
+            <div id="comments">
+                <h3>Leave a reply</h3>
+                <div class="create_comment">
+                    <div class="line1">
+                        <label for="comment_input" class="label">Comment</label>
+                        <textarea name="" id="comment_input" rows="6" class="input"></textarea>
+                    </div>
+                    <div class="line2">
+                        <div>
+                            <label for="email_input" class="label">Your Email</label>
+                            <input type="email" name="email" id="email_input" class="input">
+                        </div>
+                        <div>
+                            <label for="name" class="label">Your Name</label>
+                            <input type="text" id=name_input class="input">
+                        </div>
+                    </div>
+                    <div class="footer">
+                        <button id="submit" class="btn" disabled="true">Submit</button>
+                    </div>
+                </div>
+                <div class="display_comment"></div>
+            </div>
+            <div id="comments_output">
+                <h3>Comments</h3>
+                <div class="comment">
+                    <div class="c_comment">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, quis. Voluptatum quasi, aut
+                            aliquid molestias omnis exercitationem nisi eum impedit?</p>
+
+                    </div>
+                    <div class="meta">
+                        <div class="nameanddate">11/07/2021 <span class="author">~ Ajay</span></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <script type="text/javascript" src="script.js"></script>
+
+</body>
+
+</html>
